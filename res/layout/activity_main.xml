@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+
+     <Button
+         android:id="@+id/start"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:minHeight="54dip"
+         android:minWidth="194dip"
+         android:text="@string/start_here" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/start"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/start"
+        android:layout_marginTop="23dp"
+        android:background="@color/butt_bg"
+        android:contentDescription="@string/main_logo"
+        android:src="@drawable/bitcoin_s" />
+
+    <Button
+        android:id="@+id/developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start"
+        android:layout_below="@+id/start"
+        android:layout_marginTop="32dp"
+        android:minHeight="58dip"
+        android:minWidth="194dip"
+        android:text="@string/developer" />
+
+    <Button
+        android:id="@+id/quit"
+        style="@string/developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/developer"
+        android:layout_below="@+id/developer"
+        android:layout_marginTop="28dp"
+        android:minHeight="58dip"
+        android:minWidth="194dip"
+        android:text="@string/quit" />
+
+</RelativeLayout>
